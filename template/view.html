@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body style="background-color: darkgray; color: rgb(0, 0, 0)">>
+    <h1
+    style="
+  @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Permanent+Marker&family=Raleway:wght@200&family=Source+Sans+Pro:wght@200&display=swap');
+
+    text-align: center;
+    margin-top: 30px;
+    font-family: Macondo ;
+    
+    "
+    
+    >UPLOADED FILES</h1>
+    <div style="margin-left: 10px;
+
+margin-top: 5%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 50px; border:rgb(255, 255, 255); border-width:5px; border-style:outset; padding-bottom: 30px; margin-bottom: 20px;" 
+
+>
+    <table class="table
+    
+
+    "
+ 
+    >
+        <thead>
+          <tr>
+            <th scope="col">S.no.</th>
+            <th scope="col"> Title</th>
+            <th scope="col">File Link</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for d in data%}
+    <tr style="width: 100%;">
+           <th > {{forloop.counter}} </th>
+           <th>{{d.file_name}}</th>
+           <th> <a href="{{d.my_file.url}}" target="blanck"  >  {{d.my_file}}  </a></th>
+          
+          </tr>
+          {% endfor %} 
+       
+        </tbody>
+      </table>
+    </div>
+      <div
+      style="
+      background-color: royalblue;
+color: white;
+margin-top: 6px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding: 5px;
+position: absolute;
+bottom: 10px;
+border-radius: 5px;
+width: fit-content;
+text-align: center;
+margin-left: 80%;
+      "
+
+
+      >
+      <a href="/hiden" style="color: aliceblue; text-decoration: none; text-align: center; "> ADD MORE FILES</a></div>
+  </div>
+  <div
+  style="
+  background-color: royalblue;
+color: white;
+margin-top: 6px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding: 5px;
+position: absolute;
+bottom: 10px;
+border-radius: 5px;
+width: fit-content;
+margin-left: 3%;
+  "
+
+
+  >
+  <a href="/logout" style="color: aliceblue; text-decoration: none; "> LOGOUT</a></div>
+</div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

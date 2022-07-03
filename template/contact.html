@@ -1,0 +1,63 @@
+{% extends 'bas.html' %}
+
+
+{% block title %}CONTACT US{% endblock title %}
+{% block body %}
+<div>
+
+    <div class="  h-50 d-inline-block my-0 py-0 text-center" style="height=100px">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://source.unsplash.com/random/1200x400?telephone" class="d-block w-100 h-25" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/1200x400?mobile" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/1200x400?call" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div style="text-align: center">
+    <a href = "https://animated-cassata-086d3e.netlify.app" style = "text-decoration:blink;  font-size: 30px; background-color:peachpuff; border-radius:9px; "target="blanck">
+  CONTACT US 
+    </a>
+</div>
+<form class="mx-10" style="margin: 20px" method="POST" action="/contact">
+    {% csrf_token %}
+    <div class="mb-2 ">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="name" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
+      <div class="mb-2 >
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        
+    <div class="mb-2">
+      <label for="exampleInputPassword1" class="form-label">Mobile number</label>
+      <input type="number" class="form-control" id="exampleInputPassword1" name="no">
+    </div>
+   
+    <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-success">Submit</button>
+  </form>
+</div>
+
+
+
+{% endblock body %}
