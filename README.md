@@ -4,7 +4,8 @@ main folder = hello
 app folder = home
 
 HOMEPAGE
-<img width="1024" alt="Screenshot 2022-07-21 at 10 12 56 AM" src="https://user-images.githubusercontent.com/108231083/180131546-4a1d3137-I2e79-43fe-b96a-56f3bf5299f2.png">
+<img width="1024" alt="Screenshot 2022-07-21 at 10 12 47 AM" src="https://user-images.githubusercontent.com/108231083/180132266-f55683e0-e97e-48bb-a831-4b37f66e6021.png">
+
 
 WAY FOR HIDDEN GALLERY (BY HITTING  CALCULATOR'S RED ICON )
 <img width="1024" alt="Screenshot 2022-07-21 at 10 13 05 AM" src="https://user-images.githubusercontent.com/108231083/180131673-b4da2bfb-1fc3-48fc-9a5f-56720dd32406.png">
